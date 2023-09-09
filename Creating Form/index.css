@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
+@media screen and (min-width:800px) {
+*{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.logo{
+    height: 60px;
+    width: 200px;
+    padding-bottom: 10px;
+    float: right;
+}
+.body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.container{
+    position: relative;
+    max-width: 1286px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container header{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.container form{
+    position: relative;
+    min-height: 490px;
+    border-radius: 10px;
+    margin-top: 16px;
+    background-color: lightcoral;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 6px 0;
+    color: black;
+}
+
+.fields{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form .fields .input-field{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 4px 0;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 8px;
+    margin: 4px 0;
+}
+.input-field label{
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 2px;
+    color: black;
+}
+.input-field input{
+    outline: none;
+    border: 1px solid grey;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.College{
+    outline: none;
+    border: 1px solid grey;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    border: 1px solid white;
+    width: 100%;
+    color: #fff;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #4070f4;
+    margin: 25px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-left: 7px;
+
+}
+@media screen and (max-width: 800px) {
+    *{
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    .logo{
+        height: 40px;
+        width: 145px;
+        float: right;
+    }
+    .body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .container{
+        position: relative;
+        max-width: 900px;
+        /* width: 100%; */
+        background-color: blueviolet;
+        border-radius: 6px;
+        padding: 30px;
+        margin: auto;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .container header{
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+    .container form{
+        position: relative;
+        min-height: 490px;
+        margin-top: 16px;
+        border-radius: 10px;
+        background-color: lightcoral;
+    }
+    .container form .title{
+        display: block;
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-weight: 550;
+        margin: 6px 0;
+        color: black;
+    }
+    .fields{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    
+    .form .fields .input-field{
+        display: flex;
+        flex-direction: column;
+        width: 44%;
+        margin: 4px 0;
+    }
+    .input-field{
+        display: flex;
+        flex-direction: column;
+        width: 44%;
+        margin: 4px 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .input-field label{
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 2px;
+        color: black;
+    }
+    .input-field input{
+        outline: none;
+        border: 1px solid grey;
+        font-size: 15px;
+        border-radius: 5px;
+        font-weight: 400;
+        color: #333;
+        padding: 0 15px;
+        height: 42px;
+        margin: 8px 0;
+    }
+    .College{
+        outline: none;
+        border: 1px solid grey;
+        font-size: 15px;
+        border-radius: 5px;
+        font-weight: 400;
+        color: #333;
+        padding: 0 15px;
+        height: 42px;
+        margin: 8px 0;
+    
+    }
+    .input-field input:is(:focus, :valid){
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0, 13);
+    }
+    .input-field input[type="date"]{
+        color: #707070;
+    }
+    .input-field input[type="date"]:valid{
+        color: #333;
+    }
+    .container form button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        font-size: 17px;
+        font-weight: bold;
+        max-width: 200px;
+        border: 1px solid white;
+        width: 100%;
+        color: #fff;
+        border-radius: 35px;
+        background-color: #4070f4;
+        margin: 25px 0;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        margin-left: 7px;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    *{
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    .logo{
+        height: 20px;
+        width: 80px;
+        float: right;
+        margin-top: 7px;
+        margin-right: 4px;
+    }
+    .body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .container{
+        position: relative;
+        max-width: 900px;
+        background-color: blueviolet;
+        border-radius: 6px;
+        padding: 30px;
+        margin: auto;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .container header{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    .container form{
+        position: relative;
+        min-height: 490px;
+        margin-top: 16px;
+        border-radius: 10px;
+        background-color: lightcoral;
+        /* overflow-y: scroll; */
+    }
+    .container form .title{
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+    .fields{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .form .fields .input-field{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 4px 0;
+    }
+    .input-field{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 4px 0;
+    }
+    .input-field label{
+        font-style: normal;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 2px;
+        color: black;
+    }
+    .input-field input{
+        outline: none;
+        border: 1px solid grey;
+        font-size: 11px;
+        border-radius: 4px;
+        font-weight: 400;
+        color: #333;
+        padding: 0 3px;
+        height: 30px;
+        margin: 2px 0;
+        
+    }
+    .College{
+        outline: none;
+        border: 1px solid grey;
+        font-size: 11px;
+        border-radius: 4px;
+        font-weight: 400;
+        color: #333;
+        padding: 0 3px;
+        height: 30px;
+        margin: 2px 0;
+      
+    
+    }
+    .input-field input:is(:focus, :valid){
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0, 13);
+    }
+    .input-field input[type="date"]{
+        color: #707070;
+    }
+    .input-field input[type="date"]:valid{
+        color: #333;
+    }
+    .container form button{
+        display: flex;
+        font-size: 10px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        max-width: 120px;
+        border: 1px solid white;
+        color: #fff;
+        border-radius: 35px;
+        background-color: #4070f4;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+
+
+}
+
+
+
+
